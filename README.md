@@ -26,14 +26,13 @@ playcat-queue-tpswoole适合IO密集型的业务,比如爬虫,短信发送等。
 数据格式必须包括以下字段:
 
 | 字段 | 说明 | 类型|
-|--------|--------|
+|--------|--------|--------|
 |    id  |消息的唯一标识|string|
 |channel|任务对应的通道名称|string|
 |creattime|创建时间(秒)|int|
 |retrycount|已重试次数|int|
 |delaytime|重试间隔时长(秒)|int|
 |queuedata|提供给消费服务使用的数据|array,hash|
-
 
 
 # 鸣谢
