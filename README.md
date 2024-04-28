@@ -15,6 +15,17 @@ playcat-queue-webman适合CPU密集型的业务,例如数据处理,视频转码,
 
 playcat-queue-tpswoole适合IO密集型的业务,比如爬虫,短信发送等。以为利用了swoole的协程,一个进程中可以有多个协程序,所以可以用更少的进程处理更多的请求.但因为协程使用和普通的模式有所区别，建议对协程有所了解在使用
 
+# 安装
+
+### 以下以CentOS7+PHP8.3为例，需要安装以下依赖
+```bash
+yum install php-process php-pecl-event php-pecl-redis6 php-mysqlnd php-pecl-msgpack php-pecl-rdkafka6
+```
+#### 如果需要swoole
+```bash
+yum install php-swoole5
+```
+
 # 场景
 
 ## 短信发送
